@@ -10,18 +10,25 @@ function Header() {
         <Container>
           <Navbar.Brand href="/">
             <h2 className='text-white fw-bold'>
-            <i class="bi bi-paint-bucket"></i> Color's Picker
+              <i className="bi bi-paint-bucket"></i> Color's Picker
             </h2>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav bg-white" />
+
+          {/* Add a custom class to Navbar.Toggle */}
+          <Navbar.Toggle
+            className="custom-toggler"
+            aria-controls="basic-navbar-nav bg-white"
+          />
+
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
               <Nav.Link href="/">
-                <i className="bi bi-house-door text-white"></i> <span className='text-white fw-bold'>Home</span>
+                <i className="bi bi-house-door text-white"></i>{' '}
+                <span className='text-white fw-bold'>Home</span>
               </Nav.Link>
               <Nav.Link href="/Photos">
-              <i className="bi bi-list-check text-white "></i>
-              <span className='text-white fw-bold '>Color List</span>
+                <i className="bi bi-list-check text-white "></i>
+                <span className='text-white fw-bold '>Color List</span>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
