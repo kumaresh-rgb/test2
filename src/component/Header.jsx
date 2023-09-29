@@ -13,7 +13,7 @@ function Header() {
             <i class="bi bi-paint-bucket"></i> Color's Picker
             </h2>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav text-white" />
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Nav>
               <Nav.Link href="/">
